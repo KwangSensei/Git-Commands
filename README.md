@@ -42,6 +42,7 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
    ```
    # Git configuration commands for a new account
+   
    git config --global user.name "username"
    git config --global user.email "user@example.com"
    ```
