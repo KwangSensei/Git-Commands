@@ -42,20 +42,22 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
    ```
    # Git configuration commands for a new account
-   
+
    git config --global user.name "username"
    git config --global user.email "user@example.com"
    ```
 
 3. There are 2 ways to create a local Git repository.  What are they?  
+   ```
    - git init 
-      ```
-      git init command creates a new git repository.
-      ```
+   ```
+   * Git init command creates a new git repository.
+      
+   ```   
    - git clone
-      ```
-      The git clone command create a copy of a repository, including all logging and versions of files.
-      ```
+   ```   
+   * The git clone command create a copy of a repository, including all logging and versions of files.
+
 4. When you create a git repository by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for this local repository (relative to the directory where you typed "git init")?
    ```
    The hidden directory will create in the local repository directory.
