@@ -1,6 +1,6 @@
 ># Quick Guide to Git 
 >
->By your name
+>By Wongsathorn Deekaoropkun
 >
 > **Instructions**
 > 
