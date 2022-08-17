@@ -170,11 +170,11 @@ test/
 6. **Undo a commit:** Suppose you want to discard some commit(s) and move both HEAD and "master" to an earlier revision (an earlier commit)  Suppose the git commit graph looks like this (`aaaa`, etc, are the commit ids)
    ```
    aaaa ---> bbbb ---> cccc ---> dddd [HEAD -> master]
-
-
-   git reset --hard bbbb
    ``` 
    The command to reset HEAD and master to the commit id `bbbb`:
+   ```
+   git reset --hard bbbb
+   ```
 
 
 7. **Checkout old code:** Using the above example, the command to replace your working copy with the files from commit with id `aaaa`:
