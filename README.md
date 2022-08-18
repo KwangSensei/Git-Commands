@@ -38,12 +38,12 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 
 3. There are 2 ways to create a local Git repository.  What are they?  
    ```
-   - git init 
+   - run git init command. 
    ```
    * Git init command creates a new git repository.
       
    ```   
-   - git clone
+   - run git clone command.
    ```   
    * The git clone command create a copy of a repository, including all logging and versions of files.
 
