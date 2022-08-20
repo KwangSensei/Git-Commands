@@ -10,7 +10,6 @@
    git remote show origin
    ```
 
-
 3. (Pushing a new branch) You commit some files to the `dev-foo` branch and try to "push" them to Github, but it fails as shown here:
    ```
    cmd>  git checkout dev-foo
@@ -18,8 +17,7 @@
    fatal:  The current branch dev-foo has no upstream branch. 
    ```
    Explain this error.
-   > The branch `dev-foo ` has not been push to the upstream branch.
-
+   > The branch `dev-foo` has not been push to the upstream branch.
 
 4. The command to push `dev-foo` to `origin` as a **new remote branch** on `origin` is:
    ```
@@ -29,7 +27,8 @@
 5. (Create a local tracking branch for a remote branch) The remote repository (`origin`) has a branch named `e2e-test` that you don't have in your local repository.   
    The command to create a new local branch as a copy of the remote `e2e-test` branch that **tracks** the remote branch is:
    ```
-   git pull?
+   git fetch
+   git branch --t e2e-test origin/e2e-test
    ```
 
 6. Consider this situation:
@@ -44,11 +43,9 @@
    
    > Git will make you merge between works from remote repository and working copy. Run "git fetch" to update version of work and save in the origin/master tracking branch. Then run "git merge --no-commit", this command will merge work that we fetched and on working copy. Then edit confliction and push to repository.
 
-
-
 7. The command to change the URL of the remote "origin" to a new URL, such as `https://hostname/newuser/new-repo-name`, is:
    ```
-   TODO your answer
+   git remote set-url origin https://hostname/newuser/new-repo-name
    ```
    This situation occurs when:
    - you change the name of a repo on Github
@@ -56,14 +53,13 @@
    - you move from Github to another hosting site, like Bitbucket
    - you want to switch from the https to the ssh protocol (the remote URL is different even though location is the same)    
 
-
 8. To create a *second* remote repository for your local repo, the command to add a remote named "bitbucket" with the URL "https://bitbucket.org/your-username/git-commands" is:
    ```
-   todo your answer
+   git remote add <bitbucket> <https://bitbucket.org/your-username/git-commands>
    ```
    - Note: you must **create** an empty repo on Bitbucket. This command just adds it as a remote, it won't create the remote repo.
 
-
 9. After adding the remote named `bitbucket`, the command to push your master branch to `bitbucket` is:
-
-
+   ```
+   git push second HEAD
+   ```
