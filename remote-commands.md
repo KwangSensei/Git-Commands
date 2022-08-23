@@ -61,5 +61,5 @@
 
 9. After adding the remote named `bitbucket`, the command to push your master branch to `bitbucket` is:
    ```
-   git push second HEAD
+   git push -u origin bitbucket
    ```
